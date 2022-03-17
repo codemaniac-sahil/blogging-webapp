@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBlogger - Add a blog</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<div class="navbar">
+        <div class="logo">
+            <p><h1><a href="index.html">iBlogger</a></h1></p>
+           
+
+        </div>
+        <div class="left-nav">
+            <ul class="navlinks">
+              
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="Logout.php" id="login">Logout</a></li>
+               
+
+            </ul>
+        </div>
+</div>
+<div class="form">
+    <h1>Add a blog</h1>
+    <form action="add.php" method="POST">
+        <table>
+            <tr>
+                <td>Title</td>
+                <td><input type="text" name = 'title' size="50"></td>
+
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td><input type="text" name="author" size="50"></td>
+            </tr>
+           
+            <tr>
+            <td>Write the blog</td>
+            <td><textarea name="content" id="" cols="80" rows="20"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="Post" id="post" name='post'>
+    </form>
+</div>
